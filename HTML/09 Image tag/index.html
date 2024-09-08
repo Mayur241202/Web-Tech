@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tag</title>
+</head>
+
+<body>
+
+    <h2>Basic Image</h2>
+
+    <!-- Interview Note: The 'src' attribute specifies the path to the image file. The 'alt' attribute provides alternative text if the image fails to load or for accessibility. -->
+    <img src="image1.jpeg" alt="First Image">
+
+
+    <h2>Image with Width and Height</h2>
+
+    <!-- Interview Note: Use the 'width' and 'height' attributes to set the size of the image in pixels. Setting these attributes helps to reserve space for the image on the page, improving page load speed. -->
+    <img src="image2.jpeg" alt="Second Image" width="200" height="150">
+
+
+    <h2>Image with Inline CSS for Styling</h2>
+
+    <!-- Interview Note: Inline CSS can be used to add styles such as borders, margins, or custom sizes. It's generally better to use external stylesheets for maintainability, but this can be useful for quick adjustments. -->
+    <img src="image3.jpeg" alt="Third Image" style="border: 4px solid black; margin: 10px">
+
+
+    <h2>Responsive Image</h2>
+
+    <!-- Interview Note: Using CSS properties like 'max-width: 100%' makes the image responsive, meaning it will scale according to the parent container. This is essential for mobile-friendly designs. -->
+    <img src="image4.jpeg" alt="Forth Image" style="max-width: 100%; height: auto">
+
+
+    <h2>Image as a Link</h2>
+
+    <!-- Interview Note: Wrapping an image in an anchor tag '<a>' makes the image clickable. This is useful for creating image-based navigation elements. -->
+    <a href="image5.jpeg">
+        <img src="image5.jpeg" alt="Fifth Image">
+    </a>
+
+
+    <h2>Image with Lazy Loading</h2>
+
+    <!-- Interview Note: 'loading="lazy"' attribute delays loading the image until the user scrolls near it. This improves the initial load time of the web page, especially useful for pages with many images. -->
+    <img src="image6.jpeg" alt="Sixth Image" loading="lazy">
+
+    <h2>Image with Different Formats</h2>
+
+    <!-- Interview Note: Use WebP format for better compression without loss of quality. Providing a fallback format like JPG ensures compatibility with all browsers. -->
+    <picture>
+
+        <!-- This source will be used if the browser supports WebP. We have to download image in both formats.-->
+        <source srcset="image1.webp" type="image/webp">
+
+        <!-- Fallback to JPG if the browser doesn't support WebP -->
+        <img src="image1.jpeg" alt="Seventh Image">
+    </picture>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal & Break Line Tags</title>
+
+    <style>
+        /* Styling for the horizontal line */
+        .styled-hr{
+            height: 2px;
+            background-color: #333;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <hr>: The horizontal rule tag is used to create a thematic break or separation in the content -->
+    <!-- Important Note: By default, it creates a simple line to visually separate sections -->
+    <!-- Interview Tip: Often used to denote a change of topic or to separate different sections of content -->
+    <h1>Section 1</h1>
+    <p>This is some content in the first section. The horizontal line below separates this section from the next.</p>
+
+    <!-- Example of a basic horizontal line using the <hr> tag -->
+    <!-- Question to expect: How can you style an <hr> tag? 
+         Answer: It can be styled using CSS properties like height, color, margin, etc. -->
+    <hr>
+
+    <h1>Section 2</h1>
+    <p>This section is separated from the previous one using an hr tag.</p>
+
+    <!-- Styling an <hr> with CSS -->
+    <!-- Note: Using CSS, you can control the thickness, color, and other visual aspects of the line -->
+    <hr class="styled-hr">
+
+
+    <!-- <br>: The line break tag is used to break the line and continue the content on the next line -->
+    <!-- Important Note: <br> is an inline element and doesn't add extra space like block-level elements -->
+    <!-- Interview Insight: Commonly used in places where a new line is required without starting a new block of text -->
+    <p>This is a sentence with a line break<br>right in the middle.</p>
+
+
+    <!-- Using multiple <br> tags to add extra space between lines -->
+    <!-- Interview Tip: Overuse of <br> tags can make HTML less readable; consider CSS for managing spacing -->
+    <p>This is another line.<br><br>Notice the double line break used to create extra space between lines.</p>
+
+    <!-- Common Misuse: Avoid using <br> for adding large spaces; it's best for single line breaks only -->
+    <!-- Question: When should <br> be avoided? 
+         Answer: Use it sparingly; for larger spacing, CSS margin or padding is preferred. -->
+    <p>Another example of a line break<br>in the middle of a sentence.</p>
+    
+</body>
+</html>

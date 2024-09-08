@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tag</title>
+
+    <style>
+        /* Styling for anchor tags */
+        .styled-link {
+            color: darkblue;
+            /* Changes the text color of the link */
+            text-decoration: none;
+            /* Removes the underline from the link */
+            font-weight: bold;
+            /* Makes the text bold */
+        }
+
+        .styled-link:hover {
+            color: red;
+            /* Changes color when the mouse hovers over the link */
+            text-decoration: underline;
+            /* Adds an underline on hover */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Basic Anchor Tag Usage -->
+    <!-- <a>: The anchor tag is used to create hyperlinks to navigate between pages, files, or different sections of the same document -->
+    <!-- Important Note: Anchor tags use the href attribute to define the destination URL or link -->
+    <!-- Interview Insight: Commonly used for navigation and is a crucial part of any web page for linking resources -->
+    <p>Visit <a href="https://www.example.com">Example Website</a> for more information.</p>
+
+
+    <!-- Opening links in a new tab using the target attribute -->
+    <!-- Important Note: The target="_blank" attribute makes the link open in a new tab, enhancing user navigation experience -->
+    <!-- Interview Tip: Ensure to use rel="noopener noreferrer" when using target="_blank" to prevent security vulnerabilities -->
+    <p>Open in a new tab: <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Example Website</a></p>
+
+    <!--
+        Target Value: _top
+        - Description: Opens the linked document in the full body of the window, breaking out of any frames.
+        - Use Case: Typically used when you want to ensure the link opens in the top-level window, especially useful in framed environments to navigate to a full-page view.
+    -->
+    <p>Opens in the full body of the window<a href="https://www.google.com" target="_top">Example Website</a></p>
+
+     <!--
+        Target Value: _self
+        - Description: Opens the linked document in the same window or tab. This is the default behavior if no target attribute is specified.
+        - Use Case: Used for standard navigation within the same browsing context without needing to specify any special behavior.
+    -->
+    <p>Opens in the same window or tab<a href="https://www.google.com" target="_self">Example Website</a></p>
+
+    <!--
+        Target Value: _parent
+        - Description: Opens the linked document in the parent frame of the current frame or iframe.
+        - Use Case: Used when working with nested frames to navigate the user to the parent context, instead of opening links within the current iframe.
+    -->
+    <p>Opens the linked document in the parent frame.<a href="https://www.google.com" target="_parent">Example Website</a></p>
+
+
+    <!-- Using anchor tags to link to sections within the same page -->
+    <!-- Internal links use the href attribute with an ID selector (#section) to jump to specific parts of the page -->
+    <!-- Interview Question: How do you create links that navigate within the same page? -->
+    <p>Jump to the <a href="#footer-section">footer section</a> of this page.</p>
+
+
+    <!-- Anchor tag with the class attribute for styling -->
+    <!-- Note: The class attribute allows you to apply specific CSS styles to anchor tags -->
+    <p>Styled link example: <a href="https://www.example.com" class="styled-link">Styled Example Link</a></p>
+
+
+    <!-- Email link using the mailto protocol -->
+    <!-- Interview Insight: The mailto attribute in href opens the user's default email client with the specified address -->
+    <p>Contact us at <a href="mailto:info@example.com">info@example.com.</a></p>
+
+    <!-- 
+    
+    Links typically appear in different colors based on their state:
+
+    Active: Displayed in red and underlined like this sentence
+
+    Visited: Appears purple and underlined like this sentence
+
+    Unvisited: Shown as blue and underlined like this sentence 
+    
+    -->
+
+    <!-- ID section for internal navigation example -->
+    <footer id="footer-section">This is the footer section you jumped to using an internal anchor link.</footer>
+
+</body>
+
+</html>

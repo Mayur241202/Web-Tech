@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Audio Video & Media</title>
+</head>
+<body>
+
+    <video src="video.mp4" height="255" controls autoplay loop muted poster="download.jpg"></video>
+    <!--Poster attribute is like a thumbnail of a video-->
+
+    <audio src="audio.mp3" controls autoplay loop muted preload="auto"></audio>
+    <!--
+    Preload attribute has 3 values :
+
+    1) auto : preload entire audio file without delaying the loading of other important page content. Browser will try to load the audio in the background.
+
+    2) none : should not preload audio file at all. The audio file will only start downloading when user intiates playback.
+
+    3) metadata : preload only metadata(duration and basic information). Useful to display duration without fully loading the audio.
+    -->
+
+    <!--
+    In media there is svg and iframe. Refer code with harry website for this.
+    -->
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Attributes Example</title>
+    <style>
+        /* The .highlight class styles elements with the class attribute */
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* The #unique ID is used for single, unique elements */
+        #unique {
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- id attribute: used to uniquely identify an element -->
+    <!-- Common interview question: Why is the id attribute used, and how does it differ from class? -->
+
+    <!-- This is in head tag thats why it is already bold. -->
+    <h1 id="unique" class="highlight">Hello, World!</h1>
+
+    <!-- class attribute: used for styling multiple elements collectively -->
+    <!-- Interview tip: Multiple classes can be assigned by separating them with spaces -->
+    <p class="highlight" style="font-size: 18px;">This paragraph uses the 'class' attribute to style the text in blue
+        and bold.</p>
+
+    <!-- style attribute: applies inline CSS styles directly to an element -->
+    <!-- Inline styles have the highest specificity; could be asked about specificity hierarchy in CSS -->
+    <p id="info" style="color: green;" title="Hi, Its, Mayur">This paragraph uses 'id' and 'style' attributes for inline styling.</p>
+
+    <!-- title attribute: provides additional information about an element when hovered over by the cursor -->
+    <!-- Common interview question: What is the purpose of the title attribute? Answer: It enhances accessibility and UX by providing extra information to users. -->
+</body>
+
+</html>
